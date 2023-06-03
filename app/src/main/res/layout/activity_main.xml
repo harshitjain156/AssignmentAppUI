@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/world_map_grayscale"
+        android:alpha=".2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:letterSpacing=".2"
+            android:text="Join As"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/darkBlue"
+            android:textSize="26sp" />
+
+        <LinearLayout
+
+            android:id="@+id/individualLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/darkBlue"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="4.2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_group_24"
+                    android:layout_margin="20dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/individualCard"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginRight="5dp"
+                android:translationZ="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="false">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginVertical="8dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Individual"
+                        android:fontFamily="@font/comfortaa"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Join and build real time community"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="11dp"
+                        />
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/individualLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                    <TextView
+
+                        android:layout_margin="15dp"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="11sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you want to network with the community, use other services on the app, chat, make free audio and video calls, join as Personal User."/>
+                    <TextView
+                        android:id="@+id/btn1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CONFIRM"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkBlue"
+                        android:gravity="end"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/professionalLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:clickable="true">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/darkBlue"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="4.2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_outline_work_outline_24"
+                    android:layout_margin="20dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/professionalCard"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginRight="5dp"
+                android:translationZ="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="false">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginVertical="8dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Professional"
+                            android:fontFamily="@font/comfortaa"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:fontFamily="@font/comfortaa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="World's Largest real time services community"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="11dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/professionalLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+
+                            android:layout_margin="15dp"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="11sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="If you want to network with the community, use other services on the app, chat, make free audio and video calls, join as Personal User."/>
+                        <TextView
+                            android:id="@+id/btn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CONFIRM"
+                            android:textStyle="bold"
+                            android:textColor="@color/darkBlue"
+                            android:gravity="end"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/MerchantLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:clickable="true">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/darkBlue"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="4.2dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_storefront_24"
+                android:layout_margin="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/merchantCard"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="-60dp"
+            android:layout_marginRight="5dp"
+            android:translationZ="0dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginVertical="8dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Individual"
+                        android:fontFamily="@font/comfortaa"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="World's largest real time merchant's community"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="11dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/MerchantLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+
+                        android:layout_margin="15dp"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="11sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you want to network with the community, use other services on the app, chat, make free audio and video calls, join as Personal User."/>
+                    <TextView
+                        android:id="@+id/btn3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CONFIRM"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkBlue"
+                        android:gravity="end"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
